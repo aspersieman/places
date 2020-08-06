@@ -3,11 +3,19 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-    searchResults: []
+    searchResultsImages: [],
+    searchResultsPlaces: [],
+    selectedPlace: {}
   },
   mutations: {
-    setSearchResults(state, payload) {
-      state.searchResults = payload;
+    setSearchResultsImages(state, payload) {
+      state.searchResultsImages = payload;
+    },
+    setSearchResultsPlaces(state, payload) {
+      state.searchResultsPlaces = payload;
+    },
+    setPlace(state, payload) {
+      state.selectedPlace = payload;
     }
   },
   actions: {

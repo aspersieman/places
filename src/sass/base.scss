@@ -1,0 +1,9 @@
+@import '~vue-material/dist/vue-material.min.css';
+@import '~vue-material/dist/theme/default.css';
+
+.center {
+  text-align: center;
+}
+.md-toolbar.md-theme-default .md-icon {
+  color: #fff !important;
+}

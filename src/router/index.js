@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/Home.vue';
+//import Home from '../views/Home.vue';
+import PlacesSearch from '../views/PlacesSearch.vue';
 import ImageSearch from '../views/ImageSearch.vue';
-import VideoSearch from '../views/VideoSearch.vue';
 
 Vue.use(Router)
 
@@ -13,17 +13,22 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: PlacesSearch
+    },
+    {
+      path: '/places',
+      name: 'places',
+      component: PlacesSearch
+    },
+    {
+      path: '/places/:id',
+      name: 'images',
+      component: ImageSearch
     },
     {
       path: '/imagesearch',
       name: 'imagesearch',
       component: ImageSearch
     },
-    {
-      path: '/videosearch',
-      name: 'videosearch',
-      component: VideoSearch
-    }
   ]
 })

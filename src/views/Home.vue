@@ -16,7 +16,6 @@
   </div>
 </template>
 <script>
-// @ is an alias to /src
 import { photosMixin } from "@/mixins/photosMixin";
 export default {
   name: "home",
@@ -27,7 +26,7 @@ export default {
       page: 1
     };
   },
-  mixins: [photosMixin],
+  mixins: [ photosMixin ],
   beforeMount() {
     this.getAllPhotos();
   },
